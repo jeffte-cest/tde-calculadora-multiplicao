@@ -40,4 +40,10 @@ def test_multiplica_sem_parametro1():
         
         multiplica(None, parametro_valido)
 
+def test_multiplica_sem_parametro2():
+    with pytest.raises(Exception):
+        parametro_valido = 2
+        
+        multiplica(parametro_valido, None)
+
     
