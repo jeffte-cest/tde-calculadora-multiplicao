@@ -9,3 +9,7 @@ def multiplica(valor1, valor2):
 def test_multiplica_com_parametros_validos(valor1, valor2, valor_esperado):
     assert valor1 * valor2 == valor_esperado
     assert multiplica(valor1, valor2) == valor_esperado
+
+@pytest.mark.parametrize('valor_invalido1, valor_invalido2, valor_esperado', [(None, None, 0)])
+def test_multiplica_com_parametros_invalidos(valor_invalido1, valor_invalido2, valor_esperado):
+    assert multiplica(valor_invalido1, valor_invalido2) == valor_esperado
