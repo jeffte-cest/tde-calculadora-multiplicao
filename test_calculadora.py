@@ -5,7 +5,7 @@ def multiplica(valor1 = 0, valor2 = 0):
     valor2 = valor2 or 0
 
     valorUmNaoEhUmNumero = valor1.isnumeric()
-    valorDoisNaoEhUmNumero = valor2..isnumeric()
+    valorDoisNaoEhUmNumero = valor2.isnumeric()
 
     if(valorUmNaoEhUmNumero):
         raise Exception('valor1 nao eh um numero')
