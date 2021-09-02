@@ -1,6 +1,9 @@
 import pytest
 
 def multiplica(valor1 = 0, valor2 = 0):
+    valor1 = valor1 or 0
+    valor2 = valor2 or 0
+    
     resultado_multiplicacao = valor1 * valor2
     
     return resultado_multiplicacao
