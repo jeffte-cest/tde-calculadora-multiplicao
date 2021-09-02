@@ -14,7 +14,7 @@ def multiplica(valor1, valor2):
     
     return resultado_multiplicacao
 
-@pytest.mark.parametrize('valor1, valor2, valor_esperado', [(0, 0, 0), [1, 1, 1]])
+@pytest.mark.parametrize('valor1, valor2, valor_esperado', [(0, 0, 0), [1, 1, 1], (2, 2, 4), (5, 0.5, 2.5)])
 def test_multiplica_com_parametros_validos(valor1, valor2, valor_esperado):
     assert valor1 * valor2 == valor_esperado
     assert multiplica(valor1, valor2) == valor_esperado
