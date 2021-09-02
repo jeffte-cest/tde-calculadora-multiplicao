@@ -22,4 +22,11 @@ def test_multiplica_com_parametro1_invalido():
 
         multiplica(parametro_invalido, parametro_valido)
 
+def test_multiplica_com_parametro2_invalido():
+    with pytest.raises(Exception):  
+        parametro_valido = 2
+        parametro_invalido = "qualquer valor"
+
+        multiplica(parametro_valido, parametro_invalido)
+
     
