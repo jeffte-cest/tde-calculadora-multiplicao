@@ -1,16 +1,6 @@
 import pytest
-from calculadora import multiplica
+from calculadora import multiplica, media_aritimetica
 
-def media_aritimetica(valores):
-  soma_dos_valores = 0
-  total_de_valores_informados = len(valores)
-
-  for valor in valores:
-    soma_dos_valores += valor
-  
-  media_aritimetica = soma_dos_valores/total_de_valores_informados
-
-  return media_aritimetica
 
 @pytest.mark.parametrize('valor1, valor2, valor_esperado', [(0, 0, 0), [1, 1, 1], (2, 2, 4), (5, 0.5, 2.5)])
 def test_multiplica_com_parametros_validos(valor1, valor2, valor_esperado):

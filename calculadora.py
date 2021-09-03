@@ -11,3 +11,16 @@ def multiplica(valor1, valor2):
     resultado_multiplicacao = valor1 * valor2
     
     return resultado_multiplicacao
+
+
+def media_aritimetica(valores):
+  soma_dos_valores = 0
+  total_de_valores_informados = len(valores)
+
+  for valor in valores:
+    soma_dos_valores += valor
+  
+  media_aritimetica = soma_dos_valores/total_de_valores_informados
+
+  return media_aritimetica
+
