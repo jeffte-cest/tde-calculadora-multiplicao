@@ -1,0 +1,6 @@
+__pycache__
+.pytest_cache
+calculadora.pyc
+.test_calculadora.py.swp
+.gitignore.swp
+
